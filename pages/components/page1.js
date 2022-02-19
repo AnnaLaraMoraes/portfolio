@@ -7,12 +7,15 @@ export default function Page1() {
   return (
     <div className={styles.body}>
       <div className={styles.container}>
-      <div className={styles.buttonsLanguage}>
+      {/* <div className={styles.buttonsLanguage}>
         <button className={styles.button}><strong>PT</strong></button>
         <button className={styles.button}>EN</button>
-      </div>
+      </div> */}
+      <div>
       <h1 className={styles.title}>Olá!<br/> Sou Anna Lara</h1>
-      <h2 className={styles.subTitle}>Programadora desde 2018 e estudante de Engenharia de Software.</h2>
+      <h2 className={styles.subTitle}>trabalho com desenvolvimento de software
+       desde 2018 e sou estudante de Engenharia de Software.</h2>
+       </div>
       <div className={styles.contact}>
         <div className={styles.contactItem}>
         <Link  href="https://wa.me/4915752946337">
@@ -37,7 +40,7 @@ export default function Page1() {
         </div>
       </div>
       <div className={styles.image}>
-        <Image src="/undraw.svg" alt="Me" width={864.67} height={685.08} />
+        <img src="/draw.svg" alt="Me"/>
       </div>
       </div>
     </div>
