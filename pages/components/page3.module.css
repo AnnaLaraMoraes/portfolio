@@ -1,0 +1,93 @@
+.body {
+    background-color: #FFFCE7;
+    padding: 36px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 	1536px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillContainer {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.skill {
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.tecnologiesContainer {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.technology {
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+.technologyIcon {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.studies {
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.studiesContainer {
+    padding-bottom: 16px; 
+    padding-right: 16px; 
+    padding-left: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-right: 36px;
+}
+
+.job {
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+
+@media (max-width: 850px) {
+    .studies {
+      flex-direction: column;
+    }
+    .studiesContainer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .job{
+        width: 100%;
+    }
+    .skill {
+        margin-bottom: 16px;
+    }
+    .technology {
+        margin-bottom: 16px;
+    }
+  }

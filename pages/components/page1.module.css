@@ -1,0 +1,86 @@
+.body {
+    background-color: #FFFCE7;
+    padding: 36px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 	1536px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.subTitle {
+    font-weight: 500;
+    max-width: 60ch;
+}
+
+.buttonsLanguage {
+    align-self: flex-end;
+}
+
+.button {
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.button:hover {
+    color: #D6CCFC;
+    font-weight: 600;
+}
+
+.contact {
+    margin-top: 3vw;
+    color: #FCB3A7;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItem {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.contactItem:hover {
+    color: #D6CCFC;
+}
+
+.contactIconContainer {
+    display: flex;
+}
+
+.contactIcon {
+    margin-right: 12px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.contactIcon:hover {
+    color: #D6CCFC;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 850px) {
+    .contactIcon {
+        font-size: 24px;
+    }
+  }
