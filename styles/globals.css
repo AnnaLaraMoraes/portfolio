@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FC9AC9; /* Safari */  
+  text-decoration-color: #FC9AC9;
+  text-decoration-thickness: 5px;
+}

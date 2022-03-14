@@ -12,7 +12,12 @@ export default function Page1() {
         <button className={styles.button}>EN</button>
       </div> */}
       <div>
-      <h1 className={styles.title}>Olá!<br/> Sou Anna Lara</h1>
+      <h1 className={styles.title}>Olá!<br/> 
+      <div className={styles.heartIcon}>
+        Sou Anna Lara 
+        <img src="/heart.png" alt="Me"/>
+      </div>
+      </h1>
       <h2 className={styles.subTitle}>trabalho com desenvolvimento de software
        desde 2018 e sou estudante de Engenharia de Software.</h2>
        </div>

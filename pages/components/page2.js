@@ -1,5 +1,5 @@
 import styles from './page2.module.css'
-import {GiCook, GiPaintBrush} from 'react-icons/gi';
+import {GiCook, GiPaintBrush, GiSewingNeedle} from 'react-icons/gi';
 import {MdCardTravel, MdMovie, MdOutlineComputer} from 'react-icons/md';
 import {FaBeer, FaCoffee, FaMusic, FaPencilAlt,FaUserGraduate} from 'react-icons/fa';
 import {BiHappyHeartEyes} from 'react-icons/bi';
@@ -34,8 +34,10 @@ export default function Page2() {
     <div className={styles.body}>
       <div className={styles.container}>
         <div className={styles.about}>
-            <div>
-            <h2>Sobre mim</h2>
+            <div style={{width: "100%"}}>
+            <h2>
+                Sobre mim
+            </h2>
             <p className={styles.textAbout}>
                 Entrei na área de TI em 2017, no curso de graduacao de Ciência da Computação que estudei por 3 anos. Nesse período
                 tive além de uma ótima carga de conhecimento, também ótimas experiencias pessoais. Fui monitora de duas matérias (Enhenharia
@@ -54,24 +56,29 @@ export default function Page2() {
             </p>
             </div>
             <div className={styles.languagesContainer}>
-                <h2>Línguas</h2>
-                <Language text="Portugues - nativa" percent="100%"/>
+                <h2>
+                    Línguas
+                </h2>
+                <Language text="Português - nativa" percent="100%"/>
                 <Language text="Inglês" percent="70%"/>
                 <Language text="Alemão" percent="30%"/>
                 <Language text="Espanhol" percent="10%"/>
             </div>
         </div>
-            <h2>Hobbies e interesses</h2>
-            <div className={styles.hobbies}>
-                <Hobby text="Cozinhar" Icon={<GiCook/>}/>
-                <Hobby text="Viajar" Icon={<MdCardTravel/>}/>
-                <Hobby text="Cerveja" Icon={<FaBeer/>}/>
-                <Hobby text="Café" Icon={<FaCoffee/>}/>
-                <Hobby text="Música" Icon={<FaMusic/>}/>
-                <Hobby text="Aquarela" Icon={<GiPaintBrush/>}/>
-                <Hobby text="Cinema" Icon={<MdMovie/>}/>
-                <Hobby text="Tatuagens" Icon={<FaPencilAlt/>}/>
-            </div>
+        <h2>
+        Hobbies e interesses
+                </h2>
+        <div className={styles.hobbies}>
+            <Hobby text="Cozinha" Icon={<GiCook/>}/>
+            <Hobby text="Viagens" Icon={<MdCardTravel/>}/>
+            <Hobby text="Cerveja" Icon={<FaBeer/>}/>
+            <Hobby text="Música" Icon={<FaMusic/>}/>
+            <Hobby text="Aquarela" Icon={<GiPaintBrush/>}/>
+            <Hobby text="Cinema" Icon={<MdMovie/>}/>
+            <Hobby text="Café" Icon={<FaCoffee/>}/>
+            <Hobby text="Tatuagens" Icon={<FaPencilAlt/>}/>
+            <Hobby text="Costura" Icon={<GiSewingNeedle/>}/>
+        </div>
       </div>
     </div>
   )
