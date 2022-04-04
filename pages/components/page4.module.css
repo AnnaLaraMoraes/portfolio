@@ -1,6 +1,7 @@
 .body {
     background-color: #FCF3A7;
     padding: 36px;
+    padding-top: 0;
     min-height: 100vh;
 }
 
@@ -15,35 +16,30 @@
 .jobDiv {
     display: flex;
     flex-flow: wrap;
-    margin-top: 12px;
     justify-content: space-around;
 }
 
-.jobContainer {
-    padding-bottom: 16px; 
-    padding-right: 16px; 
-    padding-left: 16px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 26px;
-    width: 45%;
-}
-
 .job {
-    background-color: white;
-    padding: 12px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     display: flex;
 }
 
+.imgContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.textAbout {
+    max-width: 90ch;
+    font-size: 18px;
+    border-radius: 12px;
+    margin: 0 0 26px 0;
+}
+
 @media (max-width: 850px) {
     .jobDiv {
       flex-direction: column;
-    }
-    .jobContainer {
-        width: 100%;
     }
   }

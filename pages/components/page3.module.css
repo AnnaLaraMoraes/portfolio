@@ -1,6 +1,7 @@
 .body {
     background-color: #FFFCE7;
     padding: 36px;
+    padding-top: 0;
     min-height: 100vh;
 }
 
@@ -15,6 +16,7 @@
 .skillContainer {
     display: flex;
     flex-flow: wrap;
+    margin-bottom: 12px;
 }
 
 .skill {
@@ -49,37 +51,28 @@
 .studies {
     display: flex;
     flex-flow: wrap;
+    flex-direction: row;
 
 }
 
-.studiesContainer {
-    padding-bottom: 16px; 
-    padding-right: 16px; 
-    padding-left: 16px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
-    margin-right: 36px;
-}
 
 .job {
-    background-color: white;
-    padding: 12px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     display: flex;
 }
 
+.textAbout {
+    max-width: 90ch;
+    font-size: 18px;
+    border-radius: 12px;
+    margin: 0 0 26px 0;
+}
+
 @media (max-width: 850px) {
     .studies {
       flex-direction: column;
-    }
-    .studiesContainer {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+      align-items: center;
     }
     .job{
         width: 100%;

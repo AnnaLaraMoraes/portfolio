@@ -1,7 +1,8 @@
 .body {
     background-color: #FCF3A7;
     padding: 36px;
-    min-height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .container {
@@ -10,30 +11,25 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-}
-
-.about {
-    display: flex;
     justify-content: space-between;
 }
 
 .textAbout {
-    max-width: 70ch;
+    max-width: 90ch;
     font-size: 18px;
     border-radius: 12px;
-    padding: 8px;
 }
 
-.textAbout:hover {
+/* .textAbout:hover {
     background-color: #C0FCC1;
-}
+} */
 
 .titleLanguage {
     font-weight: 700;
 }
 
 .languageContainer {
-    width: 100%;
+    width: 50%;
     background-color: white;
     border-radius: 100px;
     margin-top: 6px;
@@ -45,13 +41,13 @@
     height: 20px;
 }
 
-.languagePercent:hover {
+/* .languagePercent:hover {
     background-color: #C0FCC1;
-}
+} */
 
 .hobbies {
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
     flex-flow: wrap;
 }
 
@@ -71,9 +67,9 @@
     margin-right: 12px;
 }
 
-.hobbyContainer1:hover {
+/* .hobbyContainer1:hover {
     background-color: #C0FCC1;
-}
+} */
 
 
 .hobbyContainer2 {
@@ -112,16 +108,17 @@
 }
 
 @media (max-width: 850px) {
-    .about {
-      flex-direction: column;
-    }
     .languagesContainer {
         width: 100%;
+        margin-left: 0px;
     }
     .hobbyContainer1 {
         justify-content: space-between;
     }
     .hobbies {
         justify-content: center;
+    }
+    .languageContainer {
+        width: 100%;
     }
   }
