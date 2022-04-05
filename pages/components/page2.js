@@ -1,8 +1,14 @@
 import styles from './page2.module.css';
 import { GiCook, GiPaintBrush, GiSewingNeedle } from 'react-icons/gi';
-import { MdCardTravel, MdMovie, MdOutlineComputer } from 'react-icons/md';
-import { FaBeer, FaCoffee, FaMusic, FaPencilAlt } from 'react-icons/fa';
-import { RiUserHeartFill } from 'react-icons/ri';
+import { MdCardTravel, MdMovie } from 'react-icons/md';
+import {
+  FaBeer,
+  FaCoffee,
+  FaMusic,
+  FaPencilAlt,
+  FaUserGraduate,
+} from 'react-icons/fa';
+import { RiUserHeartFill, RiCodeSSlashLine } from 'react-icons/ri';
 
 const Language = ({ text, percent }) => {
   return (
@@ -39,8 +45,28 @@ export default function Page2() {
             e adoro fazer novas amizades. No meu tempo livre gosto de sair, ir
             em bares e restaurantes, viajar, pintar com aquarela, costurar,
             assistir séries/filmes e cozinhar. Sou uma pessoa justa e com muitos
-            ideais e amo estudar e me aprofundar sobre assuntos sociais. Este é
-            um pequeno resumo sobre mim. <RiUserHeartFill />
+            ideais e amo estudar e me aprofundar sobre assuntos sociais.
+            <RiUserHeartFill />
+          </p>
+          <p className={styles.textAbout}>
+            Entrei na área de TI em 2017, no curso de graduação em Ciência da
+            Computação que estudei por 3 anos. Nesse período tive uma ótima
+            carga de conhecimento e também ótimas experiências pessoais. Fui
+            monitora de duas matérias (Engenharia de Software e Técnicas de
+            Programação 1), participei de maratonas de programação e vários mini
+            cursos dentro da universidade e online. Em 2020 tranquei o curso
+            pois me mudei para Alemanha e logo depois, em 2021, comecei o curso
+            de graduação em Engenharia de Software, que estou estudando
+            atualmente. <FaUserGraduate />
+          </p>
+          <p className={styles.textAbout}>
+            Como profissional sou muito comprometida, motivada, responsável e
+            dedicada. Sempre busco entender totalmente do negócio para entregar
+            bons resultados e atender as expectativas. Gosto muito de trabalhar
+            em equipe, com processos e regras. Já tive experiências de trabalhar
+            presencialmente e remoto e consegui me adaptar bem em amobos os
+            modelos. Amo novos desafios e aprender novas tecnologias.
+            <RiCodeSSlashLine />
           </p>
         </div>
         <div className={styles.languagesContainer}>

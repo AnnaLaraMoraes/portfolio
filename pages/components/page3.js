@@ -2,7 +2,6 @@ import styles from './page3.module.css';
 import { FaSass, FaNodeJs, FaReact, FaFigma } from 'react-icons/fa';
 import { DiJavascript1, DiMongodb } from 'react-icons/di';
 import Card from './card';
-import { FaUserGraduate } from 'react-icons/fa';
 const Skill = ({ text, color }) => {
   return (
     <div style={{ backgroundColor: color }} className={styles.skill}>
@@ -63,17 +62,6 @@ export default function Page3() {
     <div className={styles.body}>
       <div className={styles.container}>
         <h2>Formação acadêmica</h2>
-        <p className={styles.textAbout}>
-          Entrei na área de TI em 2017, no curso de graduação em Ciência da
-          Computação que estudei por 3 anos. Nesse período tive uma ótima carga
-          de conhecimento e também ótimas experiências pessoais. Fui monitora de
-          duas matérias (Engenharia de Software e Técnicas de Programação 1),
-          participei de maratonas de programação e vários mini cursos dentro da
-          universidade e online. Em 2020 tranquei o curso pois me mudei para
-          Alemanha e logo depois, em 2021, comecei o curso de graduação em
-          Engenharia de Software, que estou estudando atualmente.{' '}
-          <FaUserGraduate />
-        </p>
         <div className={styles.studies}>
           <Card
             color="#A7FCA8"

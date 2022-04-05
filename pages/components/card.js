@@ -1,11 +1,14 @@
-import styles from './card.module.css'
+import styles from './card.module.css';
 
-export default function Card({child, color, isSmallText}) {
+export default function Card({ child, color, isSmallText }) {
   return (
-    <div className={`${styles.container} ${isSmallText ? styles.smallText : styles.bigText}`}  style={{backgroundColor: color }}>
-        <div className={styles.child}>
-            {child}
-        </div>
+    <div
+      className={`${styles.container} ${
+        isSmallText ? styles.smallText : styles.bigText
+      }`}
+      style={{ backgroundColor: color }}
+    >
+      <div className={styles.child}>{child}</div>
     </div>
-  )
+  );
 }
