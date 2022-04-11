@@ -22,20 +22,20 @@ const Job = ({ title, date, locale, description }) => {
   );
 };
 
-export default function Page4() {
+export default function Page4({ selectedLanguage }) {
   return (
     <div className={styles.body}>
       <div className={styles.container}>
-        <h2>Experiência Profissional</h2>
+        <h2>{selectedLanguage.page4title1}</h2>
         <div className={styles.jobDiv}>
           <Card
             color="#F3D9FC"
             child={
               <Job
-                title="Desenvolvedor de Software - UNBIND"
-                date="jul de 2021 - dez de 2021"
-                locale="Colónia, Renânia do Norte-Vestfália, Alemanha"
-                description="Desenvolvimento de protótipos, criação de landing page responsivas, manutenção em frontend de website e criação de novas funcionalidades. Utilização das tecnologias: ReactJs, Tailwind Css, Bootstrap, Gatsby, Storybook, Figma, Notion, Git, Github e Gitlab. "
+                title={selectedLanguage.page4job1title}
+                date={selectedLanguage.page4job1date}
+                locale={selectedLanguage.page4job1locale}
+                description={selectedLanguage.page4job1description}
                 backgroundColor="#A7FCA8"
               />
             }
@@ -44,13 +44,10 @@ export default function Page4() {
             color="#F3D9FC"
             child={
               <Job
-                title="Desenvolvedor de Software - Beef System"
-                date="dez de 2020 - abr de 2021"
-                locale="Remoto"
-                description="Criação de protótipos web e mobile com Figma,
-                uso das tecnologias React Js, React Native, NodeJs, Adonis, Sql, Git e Github para controle de versão,
-                desenvolvimento de aplicativos mobile para controle de gado, refatoração e criação de novas funcionalidades em website.
-                "
+                title={selectedLanguage.page4job2title}
+                date={selectedLanguage.page4job2date}
+                locale={selectedLanguage.page4job2locale}
+                description={selectedLanguage.page4job2description}
                 backgroundColor="#FCA7D1"
               />
             }
@@ -59,12 +56,10 @@ export default function Page4() {
             color="#F3D9FC"
             child={
               <Job
-                title="Desenvolvedor de Software - Freelance"
-                date="out de 2020 - dez de 2020 "
-                locale="Remoto"
-                description="Criação de protótipos web e mobile com Figma,
-                uso das tecnologias ReactJs, NodeJs, MongoDb, Mongoose, Git para controle de versão,
-                manutenção em website e criação de páginas web."
+                title={selectedLanguage.page4job3title}
+                date={selectedLanguage.page4job3date}
+                locale={selectedLanguage.page4job3locale}
+                description={selectedLanguage.page4job3description}
                 backgroundColor="#FCB3A7"
               />
             }
@@ -73,13 +68,10 @@ export default function Page4() {
             color="#F3D9FC"
             child={
               <Job
-                title="Desenvolvedor de Software - Structor"
-                date="mar de 2020 - set de 2020"
-                locale="Remoto"
-                description="Desenvolvimentos de novas funcionalidades e manutenção em plataforma web e aplicação mobile,
-                Uuo de tecnologias ReactJs, React Native, NodeJs, MongoDb, Mongoose, Git para controle de versão entre outras,
-                desenvolvimento de protótipos web e mobile com Figma,
-                utilização da metodologia ágil Scrum."
+                title={selectedLanguage.page4job4title}
+                date={selectedLanguage.page4job4date}
+                locale={selectedLanguage.page4job4locale}
+                description={selectedLanguage.page4job4description}
                 backgroundColor="#C0FCC0"
               />
             }
@@ -88,16 +80,10 @@ export default function Page4() {
             color="#F3D9FC"
             child={
               <Job
-                title="Estágio em desenvolvimento de software - Rancho Soluções em Tecnologia"
-                date="jun de 2019 - fev de 2020"
-                locale="Goiânia, Goiás"
-                description="Desenvolvimento de novas funcionalidades e manutenção em sistema web,
-                suporte ao usuário,
-              participação na criação do módulo financeiro do site da empresa,
-                refatoração de código,
-                integração da API de pagamento (IUGU),
-                uso das tecnologias NodeJS, VueJS, MySql, Git e GitLab, com o sistema operacional Windows,
-                utilização da metodologia ágil Scrum."
+                title={selectedLanguage.page4job5title}
+                date={selectedLanguage.page4job5date}
+                locale={selectedLanguage.page4job5locale}
+                description={selectedLanguage.page4job5description}
                 backgroundColor="#D9E5FC"
               />
             }
@@ -106,13 +92,10 @@ export default function Page4() {
             color="#F3D9FC"
             child={
               <Job
-                title="Estágio em desenvolvimento de software - Furnas - DSB.E/DIG.E"
-                date="mar de 2018 - jun de 2019 "
-                locale="Goiânia, Goiás"
-                description="Desenvolvimento de novas funcionalidades e manutenção em sistema web,
-                suporte aos funcionários,
-                uso das tecnologias PHP, HTML, CSS, JavaScript e MariaDB, com o sistema operacional Ubuntu.
-                Trabalhei em conjunto com um grupo de pesquisa na área de aerodinâmica e criei um sistema de processamento e análise de dados ambientais que visa estudar o clima de determinadas áreas para criar campos para geração de energia eólica e solar."
+                title={selectedLanguage.page4job6title}
+                date={selectedLanguage.page4job6date}
+                locale={selectedLanguage.page4job6locale}
+                description={selectedLanguage.page4job6description}
                 backgroundColor="#D9E5FC"
               />
             }

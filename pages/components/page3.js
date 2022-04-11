@@ -57,20 +57,20 @@ const Course2 = ({ title, date, locale }) => {
   );
 };
 
-export default function Page3() {
+export default function Page3({ selectedLanguage }) {
   return (
     <div className={styles.body}>
       <div className={styles.container}>
-        <h2>Formação acadêmica</h2>
+        <h2>{selectedLanguage.page3title1}</h2>
         <div className={styles.studies}>
           <Card
             color="#A7FCA8"
             isSmallText={true}
             child={
               <Course2
-                title="Unigran EAD - Engenharia de Software"
-                date="2021 - cursando"
-                locale="Estudo a distância, polo Berlim - Alemanha"
+                title={selectedLanguage.page3university1title}
+                date={selectedLanguage.page3university1date}
+                locale={selectedLanguage.page3university1locale}
               />
             }
           />
@@ -79,23 +79,23 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course2
-                title="PUC Goiás - Ciência da Computação"
-                date="2017 - 2020 (trancado)"
-                locale="Goiânia - Goiás"
+                title={selectedLanguage.page3university2title}
+                date={selectedLanguage.page3university2date}
+                locale={selectedLanguage.page3university2locale}
               />
             }
           />
         </div>
-        <h2>Cursos</h2>
+        <h2>{selectedLanguage.page3title2}</h2>
         <div className={styles.studies}>
           <Card
             color="#CCFCE8"
             isSmallText={true}
             child={
               <Course
-                title="Inovando com CSS - Fundação Bradesco"
-                date="abr 2019"
-                locale="online"
+                title={selectedLanguage.page3course1title}
+                date={selectedLanguage.page3course1date}
+                locale={selectedLanguage.page3course1locale}
               />
             }
           />
@@ -104,9 +104,9 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course
-                title="Introdução à Programação para WEB - Instituto Federal de Educação (IFSP)"
-                date="abr 2019"
-                locale="online"
+                title={selectedLanguage.page3course2title}
+                date={selectedLanguage.page3course2date}
+                locale={selectedLanguage.page3course2locale}
               />
             }
           />
@@ -115,9 +115,9 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course
-                title="Linguagem de Programação C# Básico - Fundação Bradesco"
-                date="mai de 2019"
-                locale="online"
+                title={selectedLanguage.page3course3title}
+                date={selectedLanguage.page3course3date}
+                locale={selectedLanguage.page3course3locale}
               />
             }
           />
@@ -126,9 +126,9 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course
-                title="HTML Avançado - Fundação Bradesco"
-                date="set de 2017"
-                locale="online"
+                title={selectedLanguage.page3course4title}
+                date={selectedLanguage.page3course4date}
+                locale={selectedLanguage.page3course4locale}
               />
             }
           />
@@ -137,9 +137,9 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course
-                title="PHP Academy - Softblue Cusos Online"
-                date="jun de 2017"
-                locale="online"
+                title={selectedLanguage.page3course5title}
+                date={selectedLanguage.page3course5date}
+                locale={selectedLanguage.page3course5locale}
               />
             }
           />
@@ -148,9 +148,9 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course
-                title="Algoritmos (Java) - BrasilMais TI"
-                date="mai de 2017"
-                locale="online"
+                title={selectedLanguage.page3course6title}
+                date={selectedLanguage.page3course6date}
+                locale={selectedLanguage.page3course6locale}
               />
             }
           />
@@ -159,9 +159,9 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course
-                title="Linux Básico - CACC PUC Goiás"
-                date="mar de 2017"
-                locale="online"
+                title={selectedLanguage.page3course7title}
+                date={selectedLanguage.page3course7date}
+                locale={selectedLanguage.page3course7locale}
               />
             }
           />
@@ -170,24 +170,24 @@ export default function Page3() {
             isSmallText={true}
             child={
               <Course
-                title="Java Academy - Softblue Cusos Online"
-                date="mai de 2017"
-                locale="online"
+                title={selectedLanguage.page3course8title}
+                date={selectedLanguage.page3course8date}
+                locale={selectedLanguage.page3course8locale}
               />
             }
           />
         </div>
 
-        <h2>Skills</h2>
+        <h2>{selectedLanguage.page3title3}</h2>
         <div className={styles.skillContainer}>
-          <Skill text="Desenvolvimento web" color="#CCFCE8" />
-          <Skill text="UX/UI" color="#C0FCC1" />
-          <Skill text="Wireframe" color="#FCB4A7" />
-          <Skill text="Desenvolvimento mobile" color="#F3D9FC" />
-          <Skill text="Prototipagem" color="#E5FCB3" />
-          <Skill text="Full stack" color="#FCB4A7" />
+          <Skill text={selectedLanguage.page3skill1} color="#CCFCE8" />
+          <Skill text={selectedLanguage.page3skill2} color="#C0FCC1" />
+          <Skill text={selectedLanguage.page3skill3} color="#FCB4A7" />
+          <Skill text={selectedLanguage.page3skill4} color="#F3D9FC" />
+          <Skill text={selectedLanguage.page3skill5} color="#E5FCB3" />
+          <Skill text={selectedLanguage.page3skill6} color="#FCB4A7" />
         </div>
-        <h2>Tecnologias</h2>
+        <h2>{selectedLanguage.page3title4}</h2>
         <div className={styles.tecnologiesContainer}>
           <Technology
             text="JavaScript"

@@ -47,6 +47,32 @@
   color: #D6CCFC;
 }
 
+.buttonsLanguage {
+  background-color: #FFFCE7;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.button {
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.button:hover {
+  color: #D6CCFC;
+  font-weight: 600;
+}
+
+.selectLanguage {
+  color: #D6CCFC;
+  font-weight: 600;
+}
+
 @media (max-width: 850px) {
   .footerContainer {
     flex-direction: column;

@@ -27,7 +27,7 @@
     text-decoration: none;
 }
 
-.buttonsLanguage {
+/* .buttonsLanguage {
     align-self: flex-end;
 }
 
@@ -47,7 +47,7 @@
 .selectLanguage {
     color: #D6CCFC;
     font-weight: 600;
-}
+} */
 
 .contact {
     margin-top: 3vw;

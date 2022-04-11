@@ -4,6 +4,7 @@ import Page1 from './components/page1';
 import Page2 from './components/page2';
 import Page3 from './components/page3';
 import Page4 from './components/page4';
+import { useState } from 'react';
 
 import {
   AiOutlineMail,
@@ -14,8 +15,17 @@ import {
 } from 'react-icons/ai';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import Link from 'next/link';
+import translate from '../static/translations.json';
 
 export default function Home() {
+  const [selectedLanguageButton, setSelectedLanguageButton] = useState('en');
+
+  const [selectedLanguage, setSelectedLanguage] = useState(translate.en);
+
+  const handleSetSelectLanguage = (language) => {
+    setSelectedLanguage(translate[language]);
+  };
+
   return (
     <div>
       <style>
@@ -29,10 +39,45 @@ export default function Home() {
       </Head>
 
       <main>
-        <Page1 />
-        <Page2 />
-        <Page3 />
-        <Page4 />
+        <div className={styles.buttonsLanguage}>
+          <button
+            onClick={() => {
+              handleSetSelectLanguage('pt');
+              setSelectedLanguageButton('pt');
+            }}
+            className={`${styles.button} ${
+              selectedLanguageButton === 'pt' && styles.selectLanguage
+            }`}
+          >
+            PT
+          </button>
+          <button
+            onClick={() => {
+              handleSetSelectLanguage('en');
+              setSelectedLanguageButton('en');
+            }}
+            className={`${styles.button} ${
+              selectedLanguageButton === 'en' && styles.selectLanguage
+            }`}
+          >
+            EN
+          </button>
+          <button
+            onClick={() => {
+              handleSetSelectLanguage('de');
+              setSelectedLanguageButton('de');
+            }}
+            className={`${styles.button} ${
+              selectedLanguageButton === 'de' && styles.selectLanguage
+            }`}
+          >
+            DE
+          </button>
+        </div>
+        <Page1 selectedLanguage={selectedLanguage} />
+        <Page2 selectedLanguage={selectedLanguage} />
+        <Page3 selectedLanguage={selectedLanguage} />
+        <Page4 selectedLanguage={selectedLanguage} />
       </main>
 
       <footer className={styles.footer}>
@@ -57,11 +102,11 @@ export default function Home() {
             </div>
             <div>
               <HiOutlineLocationMarker style={{ marginRight: 6 }} />
-              Colônia - Alemanha
+              {selectedLanguage.footerAddress}
             </div>
           </div>
           <div>
-            <h3>Mídias sociais</h3>
+            <h3>{selectedLanguage.footertitle2}</h3>
             <div className={styles.contactItem}>
               <Link href="https://www.linkedin.com/in/anna-lara-moraes-39827983/">
                 <a className={styles.contactIcon}>

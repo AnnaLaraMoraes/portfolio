@@ -7,53 +7,21 @@ import {
   AiOutlineWhatsApp,
 } from 'react-icons/ai';
 import Link from 'next/link';
-import { useState } from 'react';
 
-export default function Page1() {
-  const [selectedLanguage, setSelectedLanguage] = useState(1);
-
+export default function Page1({ selectedLanguage }) {
   return (
     <div className={styles.body}>
       <div className={styles.container}>
-        <div className={styles.buttonsLanguage}>
-          <button
-            onClick={() => setSelectedLanguage(1)}
-            className={`${styles.button} ${
-              selectedLanguage === 1 && styles.selectLanguage
-            }`}
-          >
-            PT
-          </button>
-          <button
-            onClick={() => setSelectedLanguage(2)}
-            className={`${styles.button} ${
-              selectedLanguage === 2 && styles.selectLanguage
-            }`}
-          >
-            EN
-          </button>
-          <button
-            onClick={() => setSelectedLanguage(3)}
-            className={`${styles.button} ${
-              selectedLanguage === 3 && styles.selectLanguage
-            }`}
-          >
-            DE
-          </button>
-        </div>
         <div>
           <h1 className={styles.title}>
-            Olá!
+            {selectedLanguage.page1title1}
             <br />
             <div className={styles.heartIcon}>
-              Sou Anna Lara
+              {selectedLanguage.page1title2}
               <img src="/heart.png" alt="Me" />
             </div>
           </h1>
-          <h2 className={styles.subTitle}>
-            Moro em Colônia na Alemanha, trabalho com desenvolvimento de
-            software desde 2018 e sou estudante de Engenharia de Software.
-          </h2>
+          <h2 className={styles.subTitle}>{selectedLanguage.page1text1}</h2>
         </div>
         <div className={styles.contact}>
           <div className={styles.contactItem}>
