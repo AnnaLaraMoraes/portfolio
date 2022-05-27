@@ -62,7 +62,7 @@ export default function Home() {
           >
             EN
           </button>
-          <button
+          {/* <button
             onClick={() => {
               handleSetSelectLanguage('de');
               setSelectedLanguageButton('de');
@@ -72,7 +72,7 @@ export default function Home() {
             }`}
           >
             DE
-          </button>
+          </button> */}
         </div>
         <Page1 selectedLanguage={selectedLanguage} />
         <Page2 selectedLanguage={selectedLanguage} />
@@ -84,14 +84,6 @@ export default function Home() {
         <div className={styles.footerContainer}>
           <div>
             <h3>Anna Lara Moraes Caixeta</h3>
-            <div className={styles.contactItem}>
-              <Link href="https://wa.me/4915752946337">
-                <a className={styles.contactIcon}>
-                  <AiOutlineWhatsApp style={{ marginRight: 6 }} />
-                  +49 1575 2976337
-                </a>
-              </Link>
-            </div>
             <div className={styles.contactItem}>
               <Link href="mailto:annalara1426@gmail.com">
                 <a className={styles.contactIcon}>
@@ -112,14 +104,6 @@ export default function Home() {
                 <a className={styles.contactIcon}>
                   <AiOutlineLinkedin style={{ marginRight: 6 }} />
                   Anna Lara Moraes
-                </a>
-              </Link>
-            </div>
-            <div className={styles.contactItem}>
-              <Link href="https://www.instagram.com/annalara.dev/">
-                <a className={styles.contactIcon}>
-                  <AiOutlineInstagram style={{ marginRight: 6 }} />
-                  @annalara.dev
                 </a>
               </Link>
             </div>

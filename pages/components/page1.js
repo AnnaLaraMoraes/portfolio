@@ -2,9 +2,7 @@ import styles from './page1.module.css';
 import {
   AiOutlineMail,
   AiOutlineLinkedin,
-  AiOutlineInstagram,
   AiOutlineGithub,
-  AiOutlineWhatsApp,
 } from 'react-icons/ai';
 import Link from 'next/link';
 
@@ -14,24 +12,16 @@ export default function Page1({ selectedLanguage }) {
       <div className={styles.container}>
         <div>
           <h1 className={styles.title}>
-            {selectedLanguage.page1title1}
+            {selectedLanguage?.page1title1}
             <br />
             <div className={styles.heartIcon}>
-              {selectedLanguage.page1title2}
+              {selectedLanguage?.page1title2}
               <img src="/heart.png" alt="Me" />
             </div>
           </h1>
-          <h2 className={styles.subTitle}>{selectedLanguage.page1text1}</h2>
+          <h2 className={styles.subTitle}>{selectedLanguage?.page1text1}</h2>
         </div>
         <div className={styles.contact}>
-          <div className={styles.contactItem}>
-            <Link href="https://wa.me/4915752946337">
-              <a className={styles.contactIcon}>
-                <AiOutlineWhatsApp style={{ marginRight: 6 }} />
-                +49 1575 2976337
-              </a>
-            </Link>
-          </div>
           <div className={styles.contactItem}>
             <Link href="mailto:annalara1426@gmail.com">
               <a className={styles.contactIcon}>
@@ -49,11 +39,6 @@ export default function Page1({ selectedLanguage }) {
             <Link href="https://github.com/AnnaLaraMoraes">
               <a className={styles.contactIcon}>
                 <AiOutlineGithub />
-              </a>
-            </Link>
-            <Link href="https://www.instagram.com/annalara.dev/">
-              <a className={styles.contactIcon}>
-                <AiOutlineInstagram />
               </a>
             </Link>
           </div>

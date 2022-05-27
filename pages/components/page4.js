@@ -26,16 +26,16 @@ export default function Page4({ selectedLanguage }) {
   return (
     <div className={styles.body}>
       <div className={styles.container}>
-        <h2>{selectedLanguage.page4title1}</h2>
+        <h2>{selectedLanguage?.page4title1}</h2>
         <div className={styles.jobDiv}>
           <Card
             color="#F3D9FC"
             child={
               <Job
-                title={selectedLanguage.page4job1title}
-                date={selectedLanguage.page4job1date}
-                locale={selectedLanguage.page4job1locale}
-                description={selectedLanguage.page4job1description}
+                title={selectedLanguage?.page4job1title}
+                date={selectedLanguage?.page4job1date}
+                locale={selectedLanguage?.page4job1locale}
+                description={selectedLanguage?.page4job1description}
                 backgroundColor="#A7FCA8"
               />
             }
@@ -44,10 +44,10 @@ export default function Page4({ selectedLanguage }) {
             color="#F3D9FC"
             child={
               <Job
-                title={selectedLanguage.page4job2title}
-                date={selectedLanguage.page4job2date}
-                locale={selectedLanguage.page4job2locale}
-                description={selectedLanguage.page4job2description}
+                title={selectedLanguage?.page4job2title}
+                date={selectedLanguage?.page4job2date}
+                locale={selectedLanguage?.page4job2locale}
+                description={selectedLanguage?.page4job2description}
                 backgroundColor="#FCA7D1"
               />
             }
@@ -56,10 +56,10 @@ export default function Page4({ selectedLanguage }) {
             color="#F3D9FC"
             child={
               <Job
-                title={selectedLanguage.page4job3title}
-                date={selectedLanguage.page4job3date}
-                locale={selectedLanguage.page4job3locale}
-                description={selectedLanguage.page4job3description}
+                title={selectedLanguage?.page4job3title}
+                date={selectedLanguage?.page4job3date}
+                locale={selectedLanguage?.page4job3locale}
+                description={selectedLanguage?.page4job3description}
                 backgroundColor="#FCB3A7"
               />
             }
@@ -68,10 +68,10 @@ export default function Page4({ selectedLanguage }) {
             color="#F3D9FC"
             child={
               <Job
-                title={selectedLanguage.page4job4title}
-                date={selectedLanguage.page4job4date}
-                locale={selectedLanguage.page4job4locale}
-                description={selectedLanguage.page4job4description}
+                title={selectedLanguage?.page4job4title}
+                date={selectedLanguage?.page4job4date}
+                locale={selectedLanguage?.page4job4locale}
+                description={selectedLanguage?.page4job4description}
                 backgroundColor="#C0FCC0"
               />
             }
@@ -80,10 +80,10 @@ export default function Page4({ selectedLanguage }) {
             color="#F3D9FC"
             child={
               <Job
-                title={selectedLanguage.page4job5title}
-                date={selectedLanguage.page4job5date}
-                locale={selectedLanguage.page4job5locale}
-                description={selectedLanguage.page4job5description}
+                title={selectedLanguage?.page4job5title}
+                date={selectedLanguage?.page4job5date}
+                locale={selectedLanguage?.page4job5locale}
+                description={selectedLanguage?.page4job5description}
                 backgroundColor="#D9E5FC"
               />
             }
@@ -92,10 +92,10 @@ export default function Page4({ selectedLanguage }) {
             color="#F3D9FC"
             child={
               <Job
-                title={selectedLanguage.page4job6title}
-                date={selectedLanguage.page4job6date}
-                locale={selectedLanguage.page4job6locale}
-                description={selectedLanguage.page4job6description}
+                title={selectedLanguage?.page4job6title}
+                date={selectedLanguage?.page4job6date}
+                locale={selectedLanguage?.page4job6locale}
+                description={selectedLanguage?.page4job6description}
                 backgroundColor="#D9E5FC"
               />
             }

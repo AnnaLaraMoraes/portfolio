@@ -19,4 +19,5 @@ h2 {
   -webkit-text-decoration-color: #FC9AC9; /* Safari */  
   text-decoration-color: #FC9AC9;
   text-decoration-thickness: 5px;
+  margin-bottom: 16px;
 }
