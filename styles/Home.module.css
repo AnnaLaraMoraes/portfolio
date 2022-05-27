@@ -48,11 +48,12 @@
 }
 
 .buttonsLanguage {
-  background-color: #FFFCE7;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 16px;
+  position: fixed;
+  z-index: 1;
 }
 
 .button {
@@ -79,5 +80,9 @@
     align-items: center;
     font-size: 5vw;
     text-align: center;
+  }
+
+  .buttonsLanguage {
+    background-color: #FFFCE7;
   }
 }
